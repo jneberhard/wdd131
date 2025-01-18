@@ -5,32 +5,30 @@
 }
 
 body {
-    display: flex;
     font-family: Roboto, sans-serif;
     text-align: center;
-    flex-wrap: wrap;
-
+    margin: 0 auto;
 }
 
 header {
-    width: 1000vh;
-}
-
-nav {
+    display: grid;
     background-color: rgb(64, 230, 230);
-    text-align: left;
-    justify-content: space-around;
+    grid-gap: 1rem;
 
 }
+
+
 
 main {
     max-width: 1200px;
     margin: 0;
+
 }
 
 /* Mobile View ***************/
-#menu {
 
+#menu {
+    display: block;
     font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
@@ -53,14 +51,17 @@ main {
 
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
 }
 
 .navigation a {
-    display: none;
+    display: block;
     border-radius: 8px;
     padding: 0.75rem;
     text-decoration: none;
@@ -68,7 +69,7 @@ main {
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
-    justify-content: space-evenly;
+    justify-content: flex-end;
 
 }
 
@@ -85,11 +86,9 @@ navigation a:active {
 }
 
 
-.show li {
+.open li {
     display: block;
     border-radius: 8px;
-
-
 }
 
 .menu1 h1 {
@@ -97,15 +96,20 @@ navigation a:active {
 
 }
 
-.temple img {
-    width: 250px;
-    height: auto;
-}
+/**for the main content    */
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-gap: 5px;
+    justify-content: center;
+}
 
+
+
+img {
+    width: 250px;
+    height: auto;
 }
 
 figcaption {
@@ -116,14 +120,14 @@ figcaption {
 }
 
 footer {
+    display: grid;
     background-color: rgb(64, 230, 230);
-    width: 1000vh;
     height: auto;
     color: black;
     padding: 10px;
 }
 
 footer p {
-    text-align: center;
+    justify-content: center;
     color: black;
 }

@@ -1,9 +1,14 @@
 @media only screen and (min-width: 40em) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     .navigation li {
@@ -13,19 +18,10 @@
     }
 
     .navigation a {
-        display: block;
-        flex: 1 1 100%;
+        text-align: center;
     }
 
     #menu {
         display: none;
     }
-
-    .menu1 {
-        display: flex;
-
-    }
-
-
-
 }
