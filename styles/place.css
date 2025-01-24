@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: green;
+    height: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.hero {
+    padding: 10px;
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.data {
+    position: absolute;
+    padding-right: 270px;
+    left: -8px;
+    top: 0;
+}
+
+.container {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: RGBA(255, 255, 255, .75);
+}
+
+h2 {
+    position: absolute;
+    background-color: RGBA(255, 0, 0, .85);
+    padding: 15px;
+    border-left: 5px;
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 8px;
+    text-align: left;
+    padding-top: 90px;
+}
+
+.content div {
+    display: contents;
+    float: right;
+}
+
+.content span:first-child,
+.weather span:first-child {
+    font-weight: bold;
+    text-align: right;
+}
+
+.container2 {
+    position: absolute;
+    display: grid;
+    bottom: 40px;
+    right: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: RGBA(255, 255, 255, .85);
+    place-items: center;
+}
+
+.container2 img {
+    width: 40px;
+    height: auto;
+    padding-top: 70px;
+}
+
+.weather1-header {
+    display: grid;
+    position: absolute;
+    bottom: 170px;
+    right: 10px;
+    padding-right: 110px;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 8px;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.weather div {
+    display: contents;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+}
+
+
+footer {
+    background-color: green;
+    width: auto;
+    color: black;
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+/* media query for small screens */
+@media (max-width: 750px) {
+
+
+    .container,
+    .container2 {
+        position: static;
+        margin: 20px auto;
+        width: 90%;
+        border: none;
+        text-align: center;
+    }
+
+    .content,
+    .weather {
+        display: grid;
+        grid-template-columns: max-content auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: left;
+        margin: 0px;
+    }
+
+    h2 {
+        position: static;
+        background-color: white;
+    }
+
+    .weather1-header,
+    .data {
+        position: static;
+        color: black;
+        padding: 1px;
+    }
+
+    .container2 img {
+        padding-top: 0px;
+    }
+
+    .hero {
+        background-color: white;
+        padding: 0;
+    }
+
+
+
+}

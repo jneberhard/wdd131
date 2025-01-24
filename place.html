@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/place.js" defer></script>
+    <title>WDD 131: Dynamic Web Fundamentals - Jim Eberhard - Coyote Natural Bridge</title>
+    <meta name="description" content="WDD131 - Place Page - Coyote Natural Bridge">
+    <meta name="author" content="Jim Eberhard">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Mexico City</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large-mexico.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium-mexico.webp" media="(min-width: 500px)">
+                <img src="images/hero-small-mexico.webp" alt="Coyote Natural Bridge" width="500" height="250">
+            </picture>
+
+            <div class="container">
+                <h2 class="data">Data</h2>
+                <div class="content">
+                    <div><span>Population:</span> <span>About 23 Million People</span></div>
+                    <div><span>Elevation:</span> <span>2240 Meters (7,350 ft)</span></div>
+                    <div><span>Language:</span> <span>Spanish</span></div>
+                    <div><span>Currency:</span> <span>Peso</span></div>
+                    <div><span>Location:</span> <span>Central Mexico</span></div>
+                    <div><span>Nearby:</span> <span>Teotihuacan</span></div>
+                    <div><span>Area Size:</span> <span>3,700 sq miles</span></div>
+                    <div><span>Geography:</span> <span>Surrounded by Mountains</span></div>
+                    <div><span>Natural Disasters:</span> <span>Earthquakes</span></div>
+                </div>
+
+            </div>
+            <div class="container2">
+                <h2 class="weather1-header">Weather</h2>
+                <img src="images/mostly-sunny.svg" alt="Mostly Sunny">
+                <div class="weather">
+                    <div><span>Temperature:</span> <span>71°F</span></div>
+                    <div><span>Wind:</span> <span>3 mph</span></div>
+                    <div><span>Wind Chill:</span> <span>70°F</span></div>
+                    <div><span>Humidity:</span> <span>34%</span></div>
+                    <div><span>Conditions:</span> <span>Mostly Sunny</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Jim Eberhard | Utah </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
