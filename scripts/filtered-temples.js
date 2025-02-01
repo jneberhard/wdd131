@@ -143,7 +143,21 @@ document.getElementById("large").addEventListener("click", () => {
 	const bigTemples = temples.filter(temple => temple.area > 90000);
 	displayTemples(bigTemples);
 });
+/*
 
+document.addEventListener("DOMContentLoaded", function() {
+	const navLinks = document.querySelectorAll(".navigation a");
+	const mainHeading = document.querySelector("main h2");
 
-
-
+	navLinks.forEach(link => {
+		link.addEventListener("click", function(event) {
+			event.preventDefault(); 
+			if (this.textContent === "Home") {
+				location.reload();
+			} else {
+				mainHeading.textContent = this.textContent; 
+			}
+		});
+	});
+});
+*/
