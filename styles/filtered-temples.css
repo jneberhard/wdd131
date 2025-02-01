@@ -1,0 +1,145 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    background-color: rgb(64, 230, 230);
+    grid-gap: 1rem;
+
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 0;
+
+}
+
+/* Mobile View ***************/
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+
+}
+
+#menu::before {
+    content: "X";
+    position: fixed;
+    padding-top: 5px;
+    right: 0;
+    padding-right: 30px;
+}
+
+#menu.open::before {
+    content: "≡";
+}
+
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: flex;
+}
+
+.navigation a,
+.navigation button {
+    background-color: rgb(64, 230, 230);
+    display: inline-block;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    justify-content: flex-end;
+
+}
+
+.navigation button:hover,
+.navigation a:hover,
+.navigattion a:active,
+.navigation button:active {
+    color: rgb(225, 228, 43);
+    background-color: rgb(41, 33, 33);
+
+}
+
+.open button,
+.open a {
+    display: none;
+}
+
+
+.open li {
+
+    border-radius: 8px;
+}
+
+.menu1 h1 {
+    padding: 10px;
+}
+
+/**for the main content    */
+
+.temple_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-gap: 5px;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.card {
+    width: 100%;
+    background-color: rgb(237, 234, 234);
+    padding: 15px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.6);
+}
+
+figcaption {
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: brown;
+}
+
+footer {
+    display: grid;
+    background-color: rgb(64, 230, 230);
+    height: auto;
+    color: black;
+    padding: 10px;
+}
+
+footer p {
+    justify-content: center;
+    color: black;
+}

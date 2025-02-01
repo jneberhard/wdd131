@@ -44,9 +44,9 @@ header {
 
 .data {
     position: absolute;
-    padding-right: 270px;
     left: -8px;
     top: 0;
+    width: 90%;
 }
 
 .container {
@@ -107,8 +107,8 @@ h2 {
     display: inline-flex;
     position: absolute;
     bottom: 130px;
-    right: 10px;
-    padding-right: 60px;
+    width: 85%;
+    margin-left: -20px;
 }
 
 .weather1-header::after {
@@ -153,33 +153,36 @@ footer p {
     .container,
     .container2 {
         position: static;
-        margin: 20px auto;
-        width: 90%;
+        width: 100%;
         border: none;
         text-align: center;
+        background-color: white;
     }
 
     .content,
     .weather {
         display: grid;
         grid-template-columns: max-content auto;
-        align-items: center;
         justify-content: center;
         padding: 10px;
-        text-align: left;
         margin: 0px;
+        width: 100%
     }
 
     h2 {
         position: static;
         background-color: white;
+        color: black;
+        padding: 1px;
+        justify-content: center;
+        width: 100%;
+
     }
 
     .weather1-header,
     .data {
         position: static;
-        color: black;
-        padding: 1px;
+        margin: 0 auto;
     }
 
     .container2 img {
@@ -193,7 +196,7 @@ footer p {
     }
 
     .hero {
-        background-color: white;
+        background-color: var(--secondary-color);
         padding: 0;
     }
 }
