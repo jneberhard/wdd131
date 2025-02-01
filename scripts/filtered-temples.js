@@ -143,6 +143,10 @@ document.getElementById("large").addEventListener("click", () => {
 	const bigTemples = temples.filter(temple => temple.area > 90000);
 	displayTemples(bigTemples);
 });
+
+document.getElementById("home").addEventListener("click", () => {
+	displayTemples(temples);
+});
 /*
 
 document.addEventListener("DOMContentLoaded", function() {
