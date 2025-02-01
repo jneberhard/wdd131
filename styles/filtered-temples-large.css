@@ -11,7 +11,8 @@
         justify-content: flex-end;
     }
 
-    .navigation button, .navigation a {
+    .navigation button,
+    .navigation a {
         display: block;
         /* change state in small view */
         flex: 1 1 100%;
