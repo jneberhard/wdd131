@@ -49,8 +49,8 @@ Noto Serif: CSS class for a variable style
   --secondary-color-transparent: rgba(194, 186, 201, .85);
   /*French Gray*/
   --transparent-white: RGBA(255, 255, 255, .75);
-  --color-orange-brown: rgb(203.138.105)
-  --color-purple: rgb(184,171,186)
+  --color-orange-brown: rgb(203, 138, 105);
+  --color-purple: rgb(184, 171, 186);
   /*Use the orange-brown (cb8a69) and purple (b8abba) sparingly for accents, calls to action, or highlights.*/
 }
 
