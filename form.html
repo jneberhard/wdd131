@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals Jim Eberhard form ">
+    <meta name="author" content="Jim Eberhard">
+    <link rel="stylesheet" href="styles/form.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>WDD 131: Dynamic Web Fundamentals - Jim Eberhard - Form</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="prf">
+            <label>Product Name
+                <select id="product1" name="product" required>
+                    <option value="" disabled selected>Select a Product ...&#9662;</option>
+                </select>
+            </label>
+            <div class="rating">Overall Rating
+                <div class="star">
+                    <label>&#x2606;<br /><input type="radio" name="mark" id="oneStar" value="One" required /></label>
+                    <label>&#x2606;&#x2606;<br /><input type="radio" name="mark" id="twoStar" value="Two"
+                            required /></label>
+                    <label>&#x2606;&#x2606;&#x2606;<br /><input type="radio" name="mark" id="threeStar" value="Three"
+                            required /></label>
+                    <label>&#x2606;&#x2606;&#x2606;&#x2606;<br /><input type="radio" name="mark" id="fourStar"
+                            value="Four" required /></label>
+                    <label>&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;<br /><input type="radio" name="mark" id="fiveStar"
+                            value="Five" required /></label>
+                </div>
+            </div>
+            <label id="install">Date of Installation <input type="date" name="completedDate" required></label>
+
+
+            <div class="features">Which features did you fine useful in the product?
+                <p>(check all that apply)</p>
+                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+            </div>
+
+
+            <label id="review">Written Review <span class="optional">(Optional)</span>
+                <textarea name="review"></textarea></label>
+            <label id="name">Your Name <span class="optional">(Optional)</span><input type="text" name="fname"></label>
+
+            <input type="submit" value="Post Review">
+        </form>
+
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Jim Eberhard | Utah </p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+:root {
+    --padding-top: 1rem;
+    --font-size: 1.2rem;
+}
+
+
+
+
+* {
+    max-width: 800px;
+    font-size: medium;
+}
+
+
+h1 {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+
+main {
+    background-color: rgb(246, 209, 246);
+    border: none;
+    padding: 15px;
+}
+
+
+.prf label {
+    display: block;
+    color: black;
+    font-size: var(--font-size);
+}
+
+.prf select,
+.prf input[type="date"],
+.prf input[type="text"],
+.prf textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    padding: 5px;
+}
+
+.prf textarea {
+    color: black;
+    min-height: 200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.star {
+    display: flex;
+    max-width: 400px;
+    max-height: 64px;
+    font-size: .9rem;
+    margin: 0;
+    border: none;
+
+}
+
+.prf label[id="install"],
+.prf label[id="name"],
+.prf label[id="review"] {
+    padding-top: var(--padding-top);
+}
+
+
+.star label {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+
+.features {
+    margin-top: 15px;
+    font-size: var(--font-size);
+}
+
+.features p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.features label {
+    display: block;
+    margin-top: 0px;
+
+}
+
+.optional {
+    color: rgb(137, 6, 6);
+    font-size: .9rem;
+}
+
+.rating {
+    display: grid;
+    max-width: 400px;
+    padding-top: var(--padding-top);
+    font-size: var(--font-size);
+
+}
+
+
+.prf input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 410px;
+    box-shadow: 1px 1px 4px #999;
+    margin-top: 1.2rem;
+}
+
+footer {
+    padding: 15px;
+    background-color: purple;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+.visits1 {
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
+}
