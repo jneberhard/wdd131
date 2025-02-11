@@ -1,0 +1,216 @@
+/* 
+EB Garamond: CSS class for a variable style
+<weight>: Use a value from 400 to 800
+<uniquifier>: Use a unique and descriptive class name
+.eb-garamond-<uniquifier> {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+Roboto: CSS class for a variable style
+<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name
+.roboto-<uniquifier> {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+Mulish: CSS class for a variable style
+<weight>: Use a value from 200 to 1000
+<uniquifier>: Use a unique and descriptive class name
+.mulish-<uniquifier> {
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+Noto Serif: CSS class for a variable style
+<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name
+.noto-serif-<uniquifier> {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+:root {
+  --background-color: rgb(87, 99, 109);
+  /*paynes' gray */
+  --primary-color-transparent: rgba(87, 99, 109, .5);
+  --secondary-color: rgb(194, 186, 201);
+  /*French Gray*/
+  --secondary-color-transparent: rgba(194, 186, 201, .85);
+  /*French Gray*/
+  --transparent-white: RGBA(255, 255, 255, .75);
+  --color-orange-brown: rgb(203, 138, 105);
+  --color-purple: rgb(184, 171, 186);
+  /*Use the orange-brown (cb8a69) and purple (b8abba) sparingly for accents, calls to action, or highlights.*/
+  --font-Serif: "Noto Serif", "EB Garamond", serif;
+}
+
+
+* {
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+body {
+  font-family: "Roboto", "Mulish", sans-serif;
+  margin: 0 auto;
+}
+
+
+header {
+  font-family: var(--font-Serif);
+  display: grid;
+  grid-template-columns: 50px .5fr 4fr;
+  align-items: center;
+  background-color: var(--background-color);
+  max-width: 1200px;
+  padding: 5px;
+  margin: 5px;
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+img {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: center;
+  width: 150px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  grid-column-start: 2;
+  list-style: none;
+  align-content: center;
+}
+
+
+.navigation a {
+  display: flex;
+  padding: 10px 20px;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-family: var(--font-Serif)
+}
+
+.navigation a:hover {
+  color: #46084f;
+  font-weight: 700;
+  text-decoration: underline;
+
+}
+
+
+main,
+ul {
+  max-width: 1200px;
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+
+}
+
+h2,
+h3 {
+  font-family: "Noto Serif", "EB Garamond", serif;
+}
+
+
+
+.coin-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 5px;
+  justify-content: center;
+  padding: 15px;
+
+}
+
+.card,
+.coin-card {
+  width: 100%;
+  background-color: rgb(237, 234, 234);
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card img,
+.coin-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.6);
+  margin-top: 1em;
+  border-radius: 8px;
+}
+
+figcaption {
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: brown;
+
+}
+
+/*  searched coins */
+.coin-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 15px;
+  width: 285px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  height: auto;
+}
+
+
+.coin-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.coin-card p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+
+footer {
+  font-family: var(--font-Serif);
+  display: grid;
+  align-items: center;
+  background-color: var(--background-color);
+  max-width: 1200px;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+}

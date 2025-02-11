@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Numismatics Coins Bills History Gold Silver">
+    <meta name="author" content="Jim Eberhard">
+    <link rel="stylesheet" href="styles/coins.css">
+    <link rel="stylesheet" href="styles/coins-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Numismatics - Coin and Bill Collectors</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="scripts/coins.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/coin-logo-small.webp" alt="Numismatics" width="300">
+        <nav>
+            <h1>Numismatics:</h1>
+            <h1>Coin and Bill Collectors</h1>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coins.html">Coins</a></li>
+                <li><a href="bills.html">Bills</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <maim>
+        <div class="coin">
+            <h2>Coins</h2>
+            <h3>Enter a year here to see what coins were produced that year: </h3>
+            <input type="number" id="yearInput" placeholder="Enter year">
+            <button onclick="findCoins()">Find Coins</button>
+            <p>This does not include commemorative coins.</p>
+        </div>
+        <div id="output"></div>
+
+        <div class="coin-list" id="indv-coin">
+
+        </div>
+    </maim>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | numismaticscollector.com | USA </p>
+        <p>Collecting Coins since 1981</p>
+        <p id="lastModified"></p>
+        <p><span class="submit">Number of Visitors: </span><span class="visits"></span></p>
+    </footer>

@@ -3,6 +3,10 @@
     --font-size: 1.2rem;
 }
 
+body {
+    margin: 0 auto;
+    padding: 2rem;
+}
 
 
 
@@ -10,6 +14,7 @@
     max-width: 800px;
     font-size: medium;
 }
+
 
 
 h1 {

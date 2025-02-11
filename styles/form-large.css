@@ -1,4 +1,6 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 768px) {
+
+
     header {
         display: flex;
         align-items: center;
