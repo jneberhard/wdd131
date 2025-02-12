@@ -1,0 +1,31 @@
+@media only screen and (min-width: 40em) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navigation button,
+    .navigation a {
+        display: block;
+        /* change state in small view */
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+}

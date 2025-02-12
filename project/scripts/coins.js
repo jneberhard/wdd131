@@ -20,6 +20,14 @@ localStorage.setItem("numVisits-ls", numVisits);    // store the new visit total
 
 console.log(`Updated visit count: ${numVisits}`);
 
+// hamburger menu on click
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
 
 
 // last modified date
@@ -60,37 +68,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const coins = [
     {
-        coinName: "Half Cent", years: "1793-1857", composition: "copper", imageUrl: "images/half-cent.jpg"
+        coinName: "Half Cent", years: "1793-1857", composition: "Copper", imageUrl: "images/half-cent.jpg"
     },
     {
-        coinName: "Large Cent (Penny)", years: "1793-1857", composition: "copper", imageUrl: "images/large-cent-obv.jpg"
+        coinName: "Large Cent (Penny)", years: "1793-1857", composition: "Copper", imageUrl: "images/large-cent-obv.jpg"
     },
     {
-        coinName: "Small Cent (Penny)", years: "1856-Present", composition: "depending on year - copper/nickel, bronze, zinc-coated steel, copper/zinc ", imageUrl: "images/small-cent.jpg", imageURLReverse: "images/1851-half-cent-rev"
+        coinName: "Small Cent (Penny)", years: "1856-Present", composition: "Depending on year - copper/nickel, bronze, zinc-coated steel, copper/zinc ", imageUrl: "images/small-cent.jpg", imageURLReverse: "images/1851-half-cent-rev"
     },
     {
-        coinName: "Two Cent", years: "1864-1873", composition: "copper", imageUrl: "images/two-cent-obv.jpg"
+        coinName: "Two Cent", years: "1864-1873", composition: "Copper and Zinc", imageUrl: "images/two-cent-obv.jpg"
     },
     {
-        coinName: "Three Cent", years: "1851-1889", composition: "copper", imageUrl: "images/three-cent.jpg"
+        coinName: "Three Cent", years: "1851-1889", composition: "Silver and Copper", imageUrl: "images/three-cent.jpg"
     },
     {
-        coinName: "Five Cent (Half Dime, Nickel)", years: "1794-Present", composition: "copper", imageUrl: "images/nickel.jpg"
+        coinName: "Five Cent (Half Dime, Nickel)", years: "1794-Present", composition: "Nickel and Copper, sometimes Silver", imageUrl: "images/nickel.jpg"
     },
     {
-        coinName: "Ten Cent (Dime)", years: "1796-Present", composition: "copper", imageUrl: "images/dime.jpg"
+        coinName: "Ten Cent (Dime)", years: "1796-Present", composition: "Silver and/or Copper", imageUrl: "images/dime.jpg"
     },
     {
-        coinName: "Twenty Cent", years: "1875-1878", composition: "copper", imageUrl: "images/20-cent-obv.jpg"
+        coinName: "Twenty Cent", years: "1875-1878", composition: "Silver and Copper", imageUrl: "images/20-cent-obv.jpg"
     },
     {
-        coinName: "Twenty-Five Cen (Quarter)", years: "1796-Present", composition: "copper", imageUrl: "images/quarter.jpg"
+        coinName: "Twenty-Five Cen (Quarter)", years: "1796-Present", composition: "Silver and/or Copper", imageUrl: "images/quarter.jpg"
     },
     {
-        coinName: "Fifty Cent (Half Dollar)", years: "1794-Present", composition: "copper", imageUrl: "images/half.jpg"
+        coinName: "Fifty Cent (Half Dollar)", years: "1794-Present", composition: "Silver and/or Copper", imageUrl: "images/half.jpg"
     },
     {
-        coinName: "Dollar", years: "1794-Present", composition: "copper", imageUrl: "images/sba.jpg"
+        coinName: "Dollar", years: "1794-Present", composition: "Silver and/or Copper", imageUrl: "images/sba.jpg"
     },
     {
         coinName: "Quarter Eagle ($2.50)", years: "1796-1929", composition: "Gold", imageUrl: "images/quarter-eagle.jpg"
@@ -102,7 +110,7 @@ const coins = [
         coinName: "Half Eagle ($5.00)", years: "1795-1929", composition: "Gold", imageUrl: "images/half-eagle.jpg"
     },
     {
-        coinName: "Eagle ($10)", years: "1795-1933", composition: "Gold", imageUrl: "images/eagle-obv.png"
+        coinName: "Eagle ($10)", years: "1795-1933", composition: "Gold", imageUrl: "images/eagle-obv.jpg"
     },
     {
         coinName: "Double Eagle ($20)", years: "1850-1933", composition: "Gold", imageUrl: "images/double-eagle.jpg"
@@ -184,7 +192,7 @@ function displayCoins(filteredCoins) {
     outputDiv.innerHTML = '';  // Clear previous output
 
     if (filteredCoins.length === 0) {
-        outputDiv.innerHTML = `<p>No coins found for that year.</p>`;
+        outputDiv.innerHTML = `<h2>No coins found for that year.</h2>`;
         return;
     }
 
@@ -192,12 +200,13 @@ function displayCoins(filteredCoins) {
         const coinCard = document.createElement('div');
         coinCard.className = 'coin-card';
         coinCard.innerHTML = `
-                    <h3>${coin['coinType']} - ${coin['coinName']}</h3>
+                    <h3>${coin['coinType']} <br> ${coin['coinName']}</h3>
+                    <img src="${coin['imageURL']}" alt="${coin['coinName']}" style="width: 150px;">
                     <p><strong>Beginning Year:</strong> ${coin['beginningYear']}</p>
                     <p><strong>Ending Year:</strong> ${coin['endingYear']}</p>
-                    <img src="${coin['imageURL']}" alt="${coin['coinName']}" style="width: 150px;">
                 `;
         outputDiv.appendChild(coinCard);
     });
 }
+
 

@@ -58,9 +58,10 @@ Noto Serif: CSS class for a variable style
 
 * {
   margin: 0 auto;
-  padding: 0px;
+  padding: 5px;
   box-sizing: border-box;
   max-width: 1200px;
+
 }
 
 body {
@@ -68,16 +69,84 @@ body {
   margin: 0 auto;
 }
 
+/* Mobile View ***************/
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+
+}
+
+#menu.open::before {
+  content: "x";
+  font-size: 40px;
+
+
+}
+
+#menu::before {
+  content: "≡";
+  position: fixed;
+  padding-top: 20px;
+  right: 0;
+  padding-right: 30px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: var(--font-Serif)
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: #46084f;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.open li {
+  display: block;
+}
+
+
+
+/*  view                      */
 
 header {
   font-family: var(--font-Serif);
-  display: grid;
+  display: flex;
   grid-template-columns: 50px .5fr 4fr;
   align-items: center;
   background-color: var(--background-color);
-  max-width: 1200px;
+  width: 100%;
   padding: 5px;
   margin: 5px;
+  position: relative;
+  justify-content: space-around;
 }
 
 h1 {
@@ -95,47 +164,72 @@ img {
   height: auto;
 }
 
-.navigation {
-  display: flex;
-  grid-column-start: 2;
-  list-style: none;
-  align-content: center;
+
+
+
+
+
+
+
+
+.top1 img {
+  float: right;
+  margin: 0 0 10px 15px;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: gray;
+  width: 50%;
+  height: auto;
+  max-width: 100%;
 }
 
-
-.navigation a {
-  display: flex;
-  padding: 10px 20px;
-  text-decoration: none;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  font-family: var(--font-Serif)
+.history h3 {
+  width: 100%;
 }
 
-.navigation a:hover {
-  color: #46084f;
-  font-weight: 700;
-  text-decoration: underline;
+.history-content {
 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.history-content p {
+  flex: 1;
+}
+
+.side {
+  flex-shrink: 0;
+  max-width: 30%;
+}
+
+.side img {
+  width: 100%;
+  height: auto;
 }
 
 
 main,
+ol,
 ul {
   max-width: 1200px;
   margin: 10px;
   padding: 5px 10px 5px 10px;
-
+  grid-template-columns: 2fr 1fr;
 }
+
+ul li,
+ol li {
+  margin-left: 30px;
+}
+
 
 h2,
 h3 {
   font-family: "Noto Serif", "EB Garamond", serif;
+  margin-top: 25px;
 }
-
-
 
 .coin-list {
   display: grid;
@@ -146,8 +240,7 @@ h3 {
 
 }
 
-.card,
-.coin-card {
+.card {
   width: 100%;
   background-color: rgb(237, 234, 234);
   padding: 15px;
@@ -157,15 +250,22 @@ h3 {
   border-radius: 8px;
 }
 
-.card img,
-.coin-card img {
+.card img {
   width: 80%;
   height: auto;
   border-radius: 5px;
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.6);
   margin-top: 1em;
   border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
+
+#ref {
+  text-decoration: none;
+  font-size: 12px;
+}
+
 
 figcaption {
   padding-bottom: 20px;
@@ -187,9 +287,15 @@ figcaption {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  height: auto;
+  height: 300px;
 }
 
+.coin-card img {
+  height: audo;
+  max-width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
 
 .coin-card h3 {
   margin: 0;
@@ -201,6 +307,7 @@ figcaption {
   font-size: 1em;
   color: #555;
   margin: 5px 0;
+  align-items: end;
 }
 
 

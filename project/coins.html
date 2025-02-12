@@ -21,9 +21,9 @@
 <body>
     <header>
         <img src="images/coin-logo-small.webp" alt="Numismatics" width="300">
+        <a id="menu" href="#"></a>
         <nav>
-            <h1>Numismatics:</h1>
-            <h1>Coin and Bill Collectors</h1>
+            <h1>Numismatics: Coin and Bill Collectors</h1>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="coins.html">Coins</a></li>
@@ -36,20 +36,28 @@
     <maim>
         <div class="coin">
             <h2>Coins</h2>
-            <h3>Enter a year here to see what coins were produced that year: </h3>
+            <h3>Enter a year here to see what United States coins were produced that year: </h3>
             <input type="number" id="yearInput" placeholder="Enter year">
             <button onclick="findCoins()">Find Coins</button>
             <p>This does not include commemorative coins.</p>
         </div>
         <div id="output"></div>
-
+        <div>
+            <h2>All Demoninations of Coins</h2>
+        </div>
         <div class="coin-list" id="indv-coin">
 
         </div>
+
     </maim>
     <footer>
+
         <p>&copy;<span id="currentYear"></span> | numismaticscollector.com | USA </p>
         <p>Collecting Coins since 1981</p>
         <p id="lastModified"></p>
         <p><span class="submit">Number of Visitors: </span><span class="visits"></span></p>
     </footer>
+
+</body>
+
+</html>
