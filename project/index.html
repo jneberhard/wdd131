@@ -64,7 +64,7 @@
             <br>
             <br>
         <div class="history">
-            <h3>History of Coins in the United States<a id="ref" href="sources.html"><sup>[2]</sup></a></h3>
+            <h3>History of Coins in the United States<a id="ref1" href="sources.html"><sup>[2]</sup></a></h3>
             <div class="history-content">
                 <p>The story of U.S. coins began before the Mint's establishment in 1792, with a mix of foreign and
                     colonial
@@ -114,65 +114,56 @@
                     inscriptions
                     and designs we see on coins today.</p>
             </div>
-
-            <sidebar class="side">
-                <img src="images/mint-production.webp" alt="Mint Production" loading="lazy">
-            </sidebar>
-
         </div>
-        <!--      <form method="get" action="review.html" class="prf">
-            <label>Product Name
-                <select id="product1" name="product" required>
-                    <option value="" disabled selected>Select a Product ...&#9662;</option>
-                </select>
-            </label>
-            <div class="rating">Overall Rating
-                <div class="star">
-                    <label>&#x2606;<br /><input type="radio" name="mark" id="oneStar" value="One" required /></label>
-                    <label>&#x2606;&#x2606;<br /><input type="radio" name="mark" id="twoStar" value="Two"
-                            required /></label>
-                    <label>&#x2606;&#x2606;&#x2606;<br /><input type="radio" name="mark" id="threeStar" value="Three"
-                            required /></label>
-                    <label>&#x2606;&#x2606;&#x2606;&#x2606;<br /><input type="radio" name="mark" id="fourStar"
-                            value="Four" required /></label>
-                    <label>&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;<br /><input type="radio" name="mark" id="fiveStar"
-                            value="Five" required /></label>
+        <div class="side1">
+            <img src="images/mint-production.webp" alt="Mint Production" loading="lazy">
+        </div>
+        <fieldset>
+            <form method="get" action="thankyou.html" class="newsletter">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Our monthly newsletter includes latest breaking news in the world of coins and bills.</p>
+                <label id="name">Your Name <span class="optional">(Optional)</span><input type="text"
+                        name="fname"></label>
+                <label id="email">Your email address <input type="text" name="email" required></label>
+                <div class="features">Which do you want to see in a newsletter?
+                    <p>(check all that apply)</p>
+                    <label><input type="checkbox" id="commemoratives" name="commemoratives"
+                            value="yes">Commemoratives</label>
+                    <label><input type="checkbox" id="errors" name="error" value="yes">Errors</label>
+                    <label><input type="checkbox" id="foreign" name="foreign" value="yes">Foreign Coins</label>
+                    <label><input type="checkbox" id="mint" name="mint" value="yes">New From the Mint</label>
                 </div>
+                <label id="comments">Comments <span class="optional">(Optional)</span>
+                    <textarea name="comment"></textarea></label>
+                <input type="submit" value="Subscribe">
+            </form>
+        </fieldset>
+        <!--  <div id="thankYouPopup" class="popup">
+            <div class="popup-content">
+                <p>Thank you for signing up to receive the newsletter!</p>
+                <button onClick="closePopup()">Close"</button>
             </div>
-            <label id="install">Date of Installation <input type="date" name="completedDate" required></label>
-
-
-            <div class="features">Which features did you fine useful in the product?
-                <p>(check all that apply)</p>
-                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
-                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
-                <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
-            </div>
-
-
-            <label id="review">Written Review <span class="optional">(Optional)</span>
-                <textarea name="review"></textarea></label>
-            <label id="name">Your Name <span class="optional">(Optional)</span><input type="text" name="fname"></label>
-
-            <input type="submit" value="Post Review">
-        </form>     -->
-
-
-
-
-
-
-
-
+        </div>-->
     </main>
     <br>
     <footer>
-
         <p>&copy;<span id="currentYear"></span> | numismaticscollector.com | USA </p>
         <p>Collecting Coins since 1981</p>
         <p id="lastModified"></p>
         <p><span class="submit">Number of Visitors: </span><span class="visits"></span></p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook" loading="lazy">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram" loading="lazy">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.png" alt="X" loading="lazy"></a>
+            <a href="https://youtube.com">
+                <img src="images/youtube.webp" alt="X" loading="lazy">
+            </a>
+        </nav>
     </footer>
 
 </body>

@@ -2,6 +2,7 @@
 
 const visitsDisplay = document.querySelector(".visits");    //   Initialize display element variable
 
+
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;   //  Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. 
 //      If the numVisits KEY is missing, then assign 0 to the numVisits variable.
 
@@ -14,11 +15,15 @@ if (numVisits !== 0) {
     visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
 
+
 numVisits++;   // increment the number of visits by one.
+
 
 localStorage.setItem("numVisits-ls", numVisits);    // store the new visit total into localStorage, key=numVisits-ls
 
 console.log(`Updated visit count: ${numVisits}`);
+
+
 
 // hamburger menu on click
 const hamButton = document.querySelector('#menu');
@@ -201,12 +206,10 @@ function displayCoins(filteredCoins) {
         coinCard.className = 'coin-card';
         coinCard.innerHTML = `
                     <h3>${coin['coinType']} <br> ${coin['coinName']}</h3>
-                    <img src="${coin['imageURL']}" alt="${coin['coinName']}" style="width: 150px;">
+                    <img src="${coin['imageURL']}" alt="${coin['coinName']}" style="width: 150px;" loading="lazy">
                     <p><strong>Beginning Year:</strong> ${coin['beginningYear']}</p>
                     <p><strong>Ending Year:</strong> ${coin['endingYear']}</p>
                 `;
         outputDiv.appendChild(coinCard);
     });
 }
-
-

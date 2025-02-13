@@ -53,6 +53,7 @@ Noto Serif: CSS class for a variable style
   --color-purple: rgb(184, 171, 186);
   /*Use the orange-brown (cb8a69) and purple (b8abba) sparingly for accents, calls to action, or highlights.*/
   --font-Serif: "Noto Serif", "EB Garamond", serif;
+  --padding-top: 10px;
 }
 
 
@@ -199,12 +200,12 @@ img {
   flex: 1;
 }
 
-.side {
+.side1 {
   flex-shrink: 0;
-  max-width: 30%;
+  max-width: 100%;
 }
 
-.side img {
+.side1 img {
   width: 100%;
   height: auto;
 }
@@ -261,7 +262,8 @@ h3 {
   transition: transform 0.2s;
 }
 
-#ref {
+#ref,
+#ref1 {
   text-decoration: none;
   font-size: 12px;
 }
@@ -291,7 +293,6 @@ figcaption {
 }
 
 .coin-card img {
-  height: audo;
   max-width: 300px;
   cursor: pointer;
   transition: transform 0.2s;
@@ -320,4 +321,131 @@ footer {
   padding: 5px;
   margin: 5px;
   color: white;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sociallinks img {
+  height: 40px;
+  width: auto;
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+
+.newsletter h2,
+.newsletter p {
+  text-align: center;
+}
+
+.newsletter label {
+  display: block;
+  color: black;
+  font-size: var(--font-size);
+}
+
+.newsletter select,
+.newsletter input[type="text"],
+.newsletter textarea {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  color: black;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+  padding: 5px;
+}
+
+.newsletter textarea {
+  color: black;
+  min-height: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+
+.newsletter label[id="email"],
+.newsletter label[id="comments"],
+.newsletter label[id="name"],
+.newsletter label[id="review"] {
+  padding-top: var(--padding-top);
+}
+
+.optional {
+  color: rgb(137, 6, 6);
+  font-size: .9rem;
+}
+
+
+fieldset {
+  border-radius: 15px;
+  max-width: 500px;
+  background-color: var(--color-purple);
+}
+
+.newsletter input[type="submit"] {
+  display: flex;
+  border: none;
+  background-color: var(--color-orange-brown);
+  color: white;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 100%;
+  max-width: 410px;
+  box-shadow: 1px 1px 4px #999;
+  margin-top: 1.2rem;
+  font-size: 30px;
+}
+
+.features {
+  margin-top: 15px;
+  font-size: var(--font-size);
+}
+
+.features p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+.features label {
+  display: block;
+  margin-top: 0px;
+
+}
+
+.newsletter input[type="checkbox"] {
+  margin-right: 8px;
+  /* Adjust as needed */
+}
+
+/*  popup controls */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-purple);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.show {
+  display: flex;
+}
+
+.popup-content {
+  background: var(--transparent-white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
