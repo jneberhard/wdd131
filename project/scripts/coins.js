@@ -42,6 +42,8 @@ document.getElementById('lastModified').textContent = "Last Modification: " + do
 
 
 /// GET SILVER AND GOLD PRICE
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const apiKey = "YOUR_API_KEY"; // Replace with your Metals-API key
     const apiUrl = `https://metals-api.com/api/latest?access_key=${apiKey}&base=USD&symbols=XAU,XAG`;
