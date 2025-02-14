@@ -114,12 +114,11 @@ body {
 
 .navigation a {
   display: block;
-
   text-align: left;
   text-decoration: none;
   color: white;
   font-size: 20px;
-  font-family: var(--font-Serif)
+  font-family: var(--font-Serif);
 }
 
 .navigation a:hover,
@@ -166,13 +165,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
 .top1 img {
   float: right;
   margin: 0 0 10px 15px;
@@ -198,6 +190,7 @@ img {
 
 .history-content p {
   flex: 1;
+  padding: 0;
 }
 
 .side1 {
@@ -209,7 +202,6 @@ img {
   width: 100%;
   height: auto;
 }
-
 
 main,
 ol,
@@ -366,7 +358,7 @@ footer {
 
 .newsletter textarea {
   color: black;
-  min-height: 200px;
+  min-height: 100px;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: pre-wrap;
