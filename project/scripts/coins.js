@@ -111,7 +111,7 @@ const coins = [
         coinName: "Quarter Eagle ($2.50)", years: "1796-1929", composition: "Gold", imageUrl: "images/quarter-eagle.jpg"
     },
     {
-        coinName: "$3", years: "1854-1889", composition: "Gold", imageUrl: "images/three-dollar.jpg"
+        coinName: "Three Dollar", years: "1854-1889", composition: "Gold", imageUrl: "images/three-dollar.jpg"
     },
     {
         coinName: "Half Eagle ($5.00)", years: "1795-1929", composition: "Gold", imageUrl: "images/half-eagle.jpg"
