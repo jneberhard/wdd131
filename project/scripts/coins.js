@@ -90,22 +90,22 @@ const coins = [
         coinName: "Three Cent", years: "1851-1889", composition: "Silver and Copper", imageUrl: "images/three-cent.jpg"
     },
     {
-        coinName: "Five Cent (Half Dime, Nickel)", years: "1794-Present", composition: "Nickel and Copper, sometimes Silver", imageUrl: "images/nickel.jpg"
+        coinName: "Five Cent (Half Dime, Nickel)", years: "1794-Present", composition: "Depending on year - Nickel and Copper, sometimes Silver", imageUrl: "images/nickel.jpg"
     },
     {
-        coinName: "Ten Cent (Dime)", years: "1796-Present", composition: "Silver and/or Copper", imageUrl: "images/dime.jpg"
+        coinName: "Ten Cent (Dime)", years: "1796-Present", composition: "Depending on year - Silver and/or Copper Clad", imageUrl: "images/dime.jpg"
     },
     {
-        coinName: "Twenty Cent", years: "1875-1878", composition: "Silver and Copper", imageUrl: "images/20-cent-obv.jpg"
+        coinName: "Twenty Cent", years: "1875-1878", composition: "Silver and Copper Clad", imageUrl: "images/20-cent-obv.jpg"
     },
     {
-        coinName: "Twenty-Five Cen (Quarter)", years: "1796-Present", composition: "Silver and/or Copper", imageUrl: "images/quarter.jpg"
+        coinName: "Twenty-Five Cen (Quarter)", years: "1796-Present", composition: "Depending on year - Silver and/or Copper Clad", imageUrl: "images/quarter.jpg"
     },
     {
-        coinName: "Fifty Cent (Half Dollar)", years: "1794-Present", composition: "Silver and/or Copper", imageUrl: "images/half.jpg"
+        coinName: "Fifty Cent (Half Dollar)", years: "1794-Present", composition: "Depending on year - Silver and/or Copper Clad", imageUrl: "images/half.jpg"
     },
     {
-        coinName: "Dollar", years: "1794-Present", composition: "Silver and/or Copper", imageUrl: "images/sba.jpg"
+        coinName: "Dollar", years: "1794-Present", composition: "Depending on year - Silver and/or Copper Clad", imageUrl: "images/sba.jpg"
     },
     {
         coinName: "Quarter Eagle ($2.50)", years: "1796-1929", composition: "Gold", imageUrl: "images/quarter-eagle.jpg"
