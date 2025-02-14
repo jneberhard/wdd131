@@ -133,7 +133,6 @@ coins.forEach(coin => {
     card.className = "card";
     card.innerHTML = `
             <h3>${coin.coinName}</h3>
-            <p><strong>Type:</strong> ${coin.coinName}</p>
             <p><strong>Mint Years:</strong> ${coin.years}</p>
             <p><strong>Composition Metal:</strong> ${coin.composition}</p>
             <img src="${coin.imageUrl}" alt="${coin.coinName}" loading="lazy" class="coin-image">
