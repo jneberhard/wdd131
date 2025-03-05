@@ -187,7 +187,7 @@ function findCoins() {
         const beginningYear = parseInt(coin['beginningYear']);
         let endingYear = coin['endingYear'] === 'Present' ? new Date().getFullYear() : parseInt(coin['endingYear']);
         return yearInput >= beginningYear && yearInput <= endingYear;
-    });
+    }); 
 
     displayCoins(filteredCoins);
 }
